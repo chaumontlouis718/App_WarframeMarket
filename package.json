@@ -1,0 +1,20 @@
+{
+  "name": "firsttest",
+  "version": "1.0.0",
+  "description": "A first application made with electron.js",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Louis Chaumont",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^8.0.2"
+  },
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "node-fetch": "^2.6.0",
+    "request": "^2.88.2"
+  }
+}

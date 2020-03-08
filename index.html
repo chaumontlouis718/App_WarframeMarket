@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Electhon App</title>
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+  <script>window.$ = window.jQuery = require('jquery');</script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div>
+    <p>Les résultats proposés par l'algorithme proviennent du site communautaires Warframe.Market.</p>
+    <p>Ce sont les prix minimum pour chaque article de warframe. On ne prends en compte que les transaction ou les
+      joueurs sont indiqués comme "InGame", quelque soit la région de vente.</p>
+    <p>"Full Set" correspond au prix du set sur le Market. "Stacking Set" correspond à la somme des colonnes Neuroptics,
+      Chassis, Systems, et Blueprint. Et Balance la différence entre Full et Stacking Set.</p>
+  </div>
+  <div id="table">
+    <div>
+      <table id="results">
+        <thead>
+          <tr>
+            <th>Warframe</th>
+            <th>Neuroptics</th>
+            <th>Chassis</th>
+            <th>Systems</th>
+            <th>Blueprint</th>
+            <th>Full Set</th>
+            <th>Stacking Set</th>
+            <th>Balance</th>
+          </tr>
+        </thead>
+        <tbody id="resultsbody">
+        </tbody>
+      </table>
+      <button id="fetchresults"> Fetch Results </button>
+      <button id="reset"> Reset </button>
+    </div>
+    <div id="money">
+      <img src="giphy.gif" alt="Moneyyyyy">
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
